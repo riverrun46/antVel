@@ -1,8 +1,6 @@
 /_ide_helper.php
 /vendor/*
 /node_modules/*
-/storage/files/
-!/storage/files/img/banner/
 /public/antvel-bower/*
 .env
 composer.lock
