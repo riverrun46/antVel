@@ -22,20 +22,18 @@ class CompanyTableSeeder extends Seeder
         $faker = Faker::create();
 
         for ($i = 0; $i < 1; $i++) {
-            $companyName = str_replace('-', ' ', $faker->unique()->company);
+            $companyName = str_replace('-', ' ', '小买');
 
             $userName = str_replace([' ', ','], '', $companyName);
 
-            $domain = $userName.$faker->randomElement(['.com', '.net', '.org']);
+            $domain = 'riverrun.online';
 
             Company::create([
                 'status'               => $faker->randomElement(['active', 'inactive']),
                 'name'                 => $companyName,
                 'website_name'         => $companyName,
-                'slogan'               => $faker->catchPhrase,
-                'logo'                 => '/img/pt-default/'.$faker->unique()->numberBetween(1, 330).'.jpg',
                 'theme'                => '',
-                'phone_number'         => $faker->e164PhoneNumber,
+                'phone_number'         => '135-1234-5678',
                 'cell_phone'           => $faker->e164PhoneNumber,
                 'address'              => $faker->streetAddress,
                 'state'                => $faker->state,
@@ -47,7 +45,7 @@ class CompanyTableSeeder extends Seeder
                 'twitter'              => $userName,
                 'email'                => 'info@'.$domain,
                 'contact_email'        => 'contact@'.$domain,
-                'sales_email'          => 'sales@'.$domain,
+                'sales_email'          => 'river_run@126.com',
                 'support_email'        => 'support@'.$domain,
                 'website'              => 'http://'.$domain,
                 'description'          => $faker->text(200),

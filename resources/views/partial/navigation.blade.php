@@ -1,5 +1,6 @@
 <div class="navbar-wrapper container">
 	<nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 				<span class="sr-only">Toggle navigation</span>
@@ -7,21 +8,19 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<div class="navbar-brand">
-				<a href="/home" class="navbar-brand">
-					@if($main_company['logo'])
-						<span class="navbar-brand-text">
-							<img src="{{$main_company['logo']}}" alt="">
-						</span>
-					@else
-						<span class="navbar-brand-text">{{ $main_company['name'] }}</span>
-					@endif
+			<a href="/home" class="navbar-brand">
+				@if($main_company['logo'])
+					<span class="navbar-brand-text">
+						<img src="{{$main_company['logo']}}" alt="">
+					</span>
+				@else
+                    <span class="glyphicon glyphicon-leaf"></span> {{ $main_company['name'] }}
+				@endif
 
-					@if(isset($main_company['slogan']))
-						<span class="navbar-brand-slogan">{{$main_company['slogan']}}</span>
-					@endif
-				</a>
-			</div>
+				@if(isset($main_company['slogan']))
+					<span class="navbar-brand-slogan">{{$main_company['slogan']}}</span>
+				@endif
+			</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
@@ -125,6 +124,7 @@
 			</ul>
 			@include('partial.navigation_help')
 		</div>
+        </div>
 	</nav>
 
 	<nav ng-controller="CategoriesController">

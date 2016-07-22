@@ -6422,27 +6422,26 @@ footer .credits .col-md-12 {
 .navbar-wrapper .navbar {
   margin-bottom: 5px;
 }
-.navbar-wrapper .navbar .navbar-header div.navbar-brand {
-  min-height: 2.8em;
-  padding: 5px 5px;
-  margin-right: -5em;
-}
-.navbar-wrapper .navbar .navbar-header a.navbar-brand {
-  font-style: italic;
+.navbar-wrapper .navbar .navbar-header .navbar-brand {
   color: #34495e;
+  padding: 15px 15px 0 15px;
+  line-height: 1.5;
 }
-.navbar-wrapper .navbar .navbar-header a.navbar-brand span.navbar-brand-slogan {
+.navbar-wrapper .navbar .navbar-header .navbar-brand span.glyphicon {
+  font-size: inherit;
+}
+.navbar-wrapper .navbar .navbar-header .navbar-brand span.navbar-brand-slogan {
   font-size: 0.4em;
   position: relative;
   bottom: -1.1em;
   right: 26.3em;
 }
-.navbar-wrapper .navbar .navbar-header a.navbar-brand span.navbar-brand-text {
+.navbar-wrapper .navbar .navbar-header .navbar-brand span.navbar-brand-text {
   font-size: 1.4em;
   position: relative;
   bottom: 0.5em;
 }
-.navbar-wrapper .navbar .navbar-header a.navbar-brand img {
+.navbar-wrapper .navbar .navbar-header .navbar-brand img {
   width: 200px;
   max-height: 40px;
 }
