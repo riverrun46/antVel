@@ -25,7 +25,6 @@
 		"intervention/image": "^2.3",
 		"greggilbert/recaptcha": "dev-master@dev",
 		"barryvdh/laravel-dompdf": "0.6.*",
-		"barryvdh/laravel-debugbar": "^2.0",
 		"predis/predis": "^1.0",
 		"davejamesmiller/laravel-breadcrumbs": "^3.0",
 		"milon/barcode": "^5.2"
